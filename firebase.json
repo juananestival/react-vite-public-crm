@@ -1,0 +1,17 @@
+{
+  "hosting":{
+     "public":"dist",
+     "site": "juanan-custom-crm",
+     "ignore":[
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+     ],
+     "rewrites":[
+        {
+           "source":"**",
+           "destination":"/index.html"
+        }
+     ]
+  }
+}

@@ -1,5 +1,8 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import { Button } from '@salesforce/design-system-react';
+
+
 
 export const Customers = () => {
   const customers = [
@@ -29,6 +32,7 @@ export const Customers = () => {
   return (
     <>
     <h1>My Custom CRM</h1>
+    <Button label="Hello Button" />
     { customers.map( (customer, i) => <NavLink key={i} to={'/customers/customer/' + customer.id}> <h2 >{customer.name }</h2></NavLink> )}
     </>
   )
